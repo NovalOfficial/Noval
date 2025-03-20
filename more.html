@@ -30,16 +30,33 @@
 
         /* Hero Section */
         .hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background:                 url('https://img.freepik.com/premium-photo/blurred-modern-business-office-building-business-background-blur-futuristic-business-office_1235831-84081.jpg') no-repeat center center;
-        background-size: cover;
-        color: white;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://img.freepik.com/premium-photo/blurred-modern-business-office-building-business-background-blur-futuristic-business-office_1235831-84081.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+
+        /* Logo Styling */
+        .logo {
+            width: 350px;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
         h1 {
             font-size: 3rem;
