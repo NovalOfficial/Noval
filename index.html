@@ -12,7 +12,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="Noval.png" width="200" />
     <title>N.O.V.A.L. - The Future of Entertainment</title>
     <style>
         /* General Styling */
@@ -31,16 +30,33 @@
 
         /* Hero Section */
         .hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background:                 url('https://www.shutterstock.com/shutterstock/videos/1009103486/thumb/1.jpg?            ip=x480') no-repeat center center;
-        background-size: cover;
-        color: white;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://www.shutterstock.com/shutterstock/videos/1009103486/thumb/1.jpg?ip=x480') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+
+        /* Logo Styling */
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
         h1 {
             font-size: 3rem;
